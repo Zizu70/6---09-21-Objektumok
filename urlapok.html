@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09.21.Ürlapokl</title>
+    <script src="urlapok.js"></script>
+</head>
+<body>
+    
+    <form action="urlapok.html" method="POST">
+        <!--
+        ha nincs action saját magára mutat
+        form action átirányitható
+        post - nem az url-be írja bele nem lehet látni 
+        titkos akkor lesz, ha utps legyen figyelj, hogy ha jelszót adsz meg ez legyen!
+    
+    -->
+        
+        <div>
+            <label for="nev"nev>Név:</label>
+            <input type="text" id="nev" placeholder="Név">
+
+        </div>
+        <div>
+            <label for="email"nev>E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail">
+
+        </div>
+        <div>
+            <label>Neme:</label>
+            <input type="radio" name="nem" id="ferfi" value="ferfi">
+            <label for="ferfi"nev>Férfi:</label>
+            <input type="radio" name="nem"id="no" value="no">
+            <label for="no"nev>Nő:</label>
+            <input type="radio" name="nem"id="egyeb" value="egyeb">
+            <label for="egyeb"nev>Egyéb / nem kívánja megadni:</label>
+
+        <div>
+            <label for="vegzettseg">Iskolai végzettség</label>
+            <select id="vegzettseg" name="vegzettseg">
+                <option value=" " selected disabled>Iskolai vegzettség</option>
+                <option value="1">Általános iskola</option>
+                <option value="2">Érettségi</option>
+                <option value="3">Egyetem</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Honnan hallott rólunk:</label>
+            <input type="checkbox" id="facebook" name="honnan" value="facebook">
+            <label fot="facebook">Facebook hirdetés</label>
+
+            <input type="checkbox" id="youtube" name="honnan" value="youtube">
+            <label for="youtube"nev>Youtube</label>
+
+            <input type="checkbox" id="ismeros" name="honnan" value="ismeros">
+            <label for="ismeros"nev>Ismerős</label>
+
+            <input type="checkbox" id="hirdetotabla">
+            <label for="hirdetotabla"nev>Hirdetőtábla</label>
+        </div>
+        <button type="submit">Regisztráció</button>
+
+    </form>
+
+
+</body>
+</html>

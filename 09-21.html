@@ -6,9 +6,49 @@
     <title>09.21.JS Objektumok</title>
 </head>
 <body>
-    <p>***</p>
+    
+    <dl>
+        <dt>Osztály</dt>
+        <dd>Adatszerkezet leírása. Nem tarlamzat konkrét adatokat, hanem csak a szerkezetet írja le. pl: Ember osztály, minden embernek van<b>nev</b> e és <b>életkor</b>a</dd>
+        <dt>Objektum</dt>
+        <dd>Az osztál yegy példánya. Konkrét adatokat tartalmaz. pl.: Gipsz Jakab - 32 éves , Tóth Márton - 21 éves</dd>
+    </dl>
+
+    <script>
+        const gipszjakab = {
+            vezeteknev: "Gipsz",
+            keresztnev: "Jakab",
+            eletkor: 32,
+            teljesnev: function () {
+                //console.log(this);
+                // kiirja a teljes objektumot
+                return this.vezeteknev + " " + this.keresztnev;
+            }
+        }
+            console.log(gipszjakab.teljesnev);
+            // a kódót irja nem az eredményt
+            console.log(gipszjakab.teljesnev());
+            // ez már az eredmény
 
 
+        const tothmarton = {
+            vezeteknev: "Tóth",
+            keresztnev: "Márton",
+            eletkor: 21,
+            teljesnev: function () {
+                //console.log(this);
+                // kiirja a teljes objektumot
+                return this.vezeteknev + " " + this.keresztnev;
+            }
+        }
+        emberek.push(gipszjakab);
+        emberek.push(tothmarton);
+        emberek.forEach(function(ember) {
+            console.log(ember.teljesnev);
+        });
+       
+       
+    </script>
 
 
 </body>
